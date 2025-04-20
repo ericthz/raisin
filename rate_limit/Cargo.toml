@@ -1,0 +1,15 @@
+[package]
+name = "rate_limit"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+governor = "0.10.0"
+tokio = { version = "1.0", features = ["full"] }
+futures = "0.3"
+nonzero_ext = "0.3.0"
+clap = { version = "4.4", features = ["derive"] }
+libc = "0.2"
+# rate-limiter = { path = "path/to/rate-limiter" }
